@@ -1,0 +1,32 @@
+[
+    {
+        "icon":"IoHomeSharp",
+        "title":"Home"
+    },
+
+
+    {
+        
+        "icon":"FaUser",
+        "title":"About"
+    },
+
+    {
+
+        "icon":"FaRegFileAlt",
+        "title":"Resume"
+    },
+
+    {
+
+        "icon":"FaRegFolderOpen",
+        "title":"Blog"
+
+    },
+
+    {
+        "icon":"IoMdCall",
+        "title":"Contact"
+
+    }
+]
