@@ -17,9 +17,9 @@ export const Home=()=>{
                 <p className="font-bestermind text-5xl font-semibold mt-3">Faiz Rizvi </p>
 
                 <div className=" flex grow items-end text-[#212121] mb-4 gap-8">
-                <span className="text-4xl cursor-pointer hover:scale-125 transition-transform duration-500 ease-in-out"><BsLinkedin /></span>
-                <span className="text-4xl cursor-pointer hover:scale-125 transition-transform duration-500 ease-in-out"><FaGithub /></span>
-                <span className="text-4xl cursor-pointer hover:scale-125 transition-transform duration-500 ease-in-out"><FaFacebook /></span>
+                <span className="text-4xl cursor-pointer hover:scale-125 active:scale-100 transition-transform duration-500 ease-in-out"><BsLinkedin /></span>
+                <span className="text-4xl cursor-pointer hover:scale-125 active:scale-100 transition-transform duration-500 ease-in-out"><FaGithub /></span>
+                <span className="text-4xl cursor-pointer hover:scale-125 active:scale-100 transition-transform duration-500 ease-in-out"><FaFacebook /></span>
                 </div>
              </div>
             </div>

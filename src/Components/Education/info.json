@@ -1,0 +1,21 @@
+[
+    {
+        "year":"2023-2026",
+        "institute":"University Of Lahore (UOL)",
+        "degree":"Bachelor in Computer Science",
+        "icon":"FaGraduationCap"
+    },
+    {
+        "year":"2021-2023",
+        "institute":"Unique College,Lahore",
+        "degree":"12th Grade",
+        "icon":"FaGraduationCap"
+    },
+
+    {
+        "year":"2019-2020",
+        "institute":"Jinnah Officer School,Lahore",
+        "degree":"10th Grade",
+        "icon":"FaGraduationCap"
+    }
+]
