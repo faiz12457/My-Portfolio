@@ -1,4 +1,4 @@
-  
+  import style from "./edu.module.css"
 import { InfoCard } from "./eduInfoCard";
 import info from "./info.json"
 import { useInView } from "react-intersection-observer";
@@ -16,7 +16,7 @@ export function EducationSec(){
     <div className="w-[70%] h-full" >
      <p className="text-[#f56539] text-6xl font-poppins font-bold">Education</p>
 
-     <div ref={ref} className={` flex flex-col gap-6 mt-10 `}>
+     <div ref={ref} className={` flex flex-col gap-6 mt-10  `}>
 
 {
     info.map((info,index)=><InfoCard key={index} info={info} icon={icons[info.icon]} />)

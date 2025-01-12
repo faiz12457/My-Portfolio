@@ -5,7 +5,8 @@
    position: absolute;
    top: 60px;
    left: 0;
-   height: 160px;
+   height: max-content;
+   min-height: 160px;
    width: 288px;
    background-color: #212121;
    border-top-right-radius: 20px;
@@ -30,13 +31,16 @@
    right: 0;
    bottom: 20px;
    width: 140px;
-   height: 39px;
+   height: auto;
+   min-height: 40px;
+
    background-color: #212121;
    color: #eaeaea;
    border-top-left-radius: 20px;
    border-bottom-left-radius: 20px;
    font-size: 0.9rem;
    display: flex;
+   flex-wrap: wrap;
    justify-content: center;
    align-items: center;
    transform: translateX(100%);
@@ -47,14 +51,21 @@
 .cardContainer:hover::after {
    transform: translateX(0);
    opacity: 1;
+
+}
+
+.cardContainer .secIcon {
+   transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .cardContainer:hover .secIcon {
    transform: translateX(-150px);
-   transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.cardContainer:hover .img{
+.cardContainer .img {
+   transition: opacity 500ms ease-in-out;
+}
+
+.cardContainer:hover .img {
    opacity: 0;
-   transition:  opacity 500ms ease-in-out;
 }
