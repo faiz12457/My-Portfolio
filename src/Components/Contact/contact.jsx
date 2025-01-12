@@ -15,7 +15,7 @@ export function Contact(){
 
     return (
         <>
-            <div className="w-[90%] mx-auto  h-[580px] mt-6 box-border flex flex-col gap-16">
+            <div className="w-[90%] mx-auto  h-[580px] mt-[100px] box-border flex flex-col gap-16">
                 <p className="text-[#f56539] text-6xl font-poppins font-bold">Contacts</p>
 
                 <div className="w-full h-full flex">
@@ -23,9 +23,9 @@ export function Contact(){
               <div className="w-1/3 h-full  pt-6 flex gap-4 flex-col justify-between">
                     <InputField type={'text'} label={"Name"} placeholder={"John Doe"} />
                     <InputField type={'email'} label={"Email"} placeholder={"John@doe.com"} />
-                    <InputField type={'email'} label={"Message"} placeholder={"Type your message...."} isTextarea={true} />
+                    <InputField type={'textarea'} label={"Message"} placeholder={"Type your message...."} isTextarea={true} />
 
-                    <button className="  font-poppins font-semibold text-[#212121] w-[140px] 
+                    <button className=" hover:bg-[#eaeaea] hover:scale-110 transition-transform duration-700 ease-in-out  font-poppins font-semibold text-[#212121] w-[140px] 
                      rounded-[50px]  p-3 bg-[#f56539] flex justify-center items-center gap-3">Send <BsSend size={20}/></button>
               </div>
 

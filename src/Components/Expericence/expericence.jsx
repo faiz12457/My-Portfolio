@@ -1,6 +1,6 @@
 import { MdOutlineBusinessCenter } from "react-icons/md";
 import expInfo from "./experience.json"
-import { ExpInfoCard } from "./InfoCard";
+import { ExpInfoCard } from "./expInfoCard";
 
 
 const icons={

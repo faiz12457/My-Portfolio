@@ -7,7 +7,6 @@ import { useInView } from "react-intersection-observer";
 export function About(){
 
     const [aboutRef,isView]=useInView()
-    console.log(isView)
     return (
         <>
             <div className="pt-12 w-full box-border ">

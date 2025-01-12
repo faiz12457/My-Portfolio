@@ -1,6 +1,7 @@
-
-import { InfoCard } from "./InfoCard";
+  
+import { InfoCard } from "./eduInfoCard";
 import info from "./info.json"
+import { useInView } from "react-intersection-observer";
 
 import { FaGraduationCap } from "react-icons/fa6";
 const icons={
@@ -8,13 +9,14 @@ const icons={
 }
 export function EducationSec(){
 
+    const [ref,isView]=useInView();
     return (
         <>
      <div className="w-[90%] mx-auto   mt-12 flex ">
-     <div className="w-[70%] h-full" >
+    <div className="w-[70%] h-full" >
      <p className="text-[#f56539] text-6xl font-poppins font-bold">Education</p>
 
-     <div className="flex flex-col gap-6 mt-10">
+     <div ref={ref} className={` flex flex-col gap-6 mt-10 `}>
 
 {
     info.map((info,index)=><InfoCard key={index} info={info} icon={icons[info.icon]} />)

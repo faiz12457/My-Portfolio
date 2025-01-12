@@ -2,18 +2,20 @@ import { useInView } from "react-intersection-observer";
 
 
 
-
+import style from "./edu.module.css"
 
 
 export function InfoCard({info,icon}){
    const {degree,institute,year}=info;
+
    const [ref,isView]=useInView({
     triggerOnce:true
    });
    
+   
 return (
     <>
-    <div ref={ref} className={`w-[680px] h-[140px]  rounded-3xl transition-transform duration-500 ease-in-out translate-y-full  flex ${isView?"translate-y-0": "translate-y-full"}`} style={{ background: 'rgba(245, 101, 57, 0.5)' }}>
+    <div ref={ref} className={` w-[680px] h-[140px]  rounded-3xl flex ${isView? style.visible: style.invisible} `} style={{ background: 'rgba(245, 101, 57, 0.5)' }}>
     <div className="w-[15%] h-full flex  justify-center items-center ">
         <div className=" rounded-[50%]  bg-[#f56539] opacity-100 w-16 h-16 flex justify-center items-center">
        {icon}
