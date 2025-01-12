@@ -12,7 +12,7 @@ export function Experience(){
         <>
      <div className="w-[90%] mx-auto   mt-12 flex flex-row-reverse  ">
      <div className="w-[70%] h-full  flex flex-col items-end" >
-     <p className="text-[#f56539] text-6xl font-poppins font-bold">Expericence</p>
+     <p className="text-[#f56539] text-6xl font-poppins font-bold">Experience</p>
 
      <div className="flex flex-col gap-6 mt-10">
 

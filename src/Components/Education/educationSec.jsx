@@ -12,7 +12,7 @@ export function EducationSec(){
     const [ref,isView]=useInView();
     return (
         <>
-     <div className="w-[90%] mx-auto   mt-12 flex ">
+     <div className="w-[90%] mx-auto   mt-16 flex ">
     <div className="w-[70%] h-full" >
      <p className="text-[#f56539] text-6xl font-poppins font-bold">Education</p>
 

@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'], 
         bestermind: ['BestermindRegular', 'sans-serif'],
+        bigShoulders: ['"Big Shoulders Text"', 'sans-serif'],
       },
     },
   },

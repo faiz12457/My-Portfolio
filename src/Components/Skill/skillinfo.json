@@ -1,0 +1,37 @@
+[
+    {
+        "title":"HTML",
+        "img":"./htmlImg.svg"
+    },
+
+    {
+        "title":"CSS",
+        "img":"./cssImg.svg"
+    },
+
+    {
+        "title":"Javascript",
+        "img":"./jsImg.svg"
+    },
+
+    {
+        "title":"React JS",
+        "img":"./reactImg.svg"
+    },
+
+    {
+        "title":"Redux",
+        "img":"./reduxImg.svg"
+
+    },
+
+    {
+        "title":"Git",
+        "img":"./gitImg.svg"
+    },
+    {
+        "title":"C++",
+        "img":"./c++Img.svg"
+
+    }
+]
