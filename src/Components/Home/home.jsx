@@ -6,8 +6,8 @@ import { FaBars } from "react-icons/fa";
 import { SideBar } from "../SideBar/sideBar";
 
 
-export const Home=()=>{
-    const[isTrue,setIsTrue]=useState(false);
+export const Home=({isTrue,setIsTrue,contactRef,handleRef})=>{
+   
 
     return (
         <>
@@ -34,13 +34,13 @@ export const Home=()=>{
                 </p>
                 <div className="text-[#f56539] font-semibold font-poppins flex gap-10 mt-5 w-full">
                     <button className="hover:text-[#212121] hover:bg-[#eaeaea] border-[#f56539] w-[150px] h-12 border-2 rounded-3xl">Download CV</button>
-                    <button className="hover:text-[#eaeaea] text-[#212121]  hover:bg-[#212121] bg-[#f56539] border-[#f56539] w-[150px] h-12 border-2 rounded-3xl">Contact</button>
+                    <button onClick={()=>handleRef(contactRef)} className="hover:text-[#eaeaea] text-[#212121]  hover:bg-[#212121] bg-[#f56539] border-[#f56539] w-[150px] h-12 border-2 rounded-3xl">Contact</button>
                 </div>
                 </div>
                 <span onClick={()=>setIsTrue(true)} className="absolute cursor-pointer top-9 right-14 text-[#eaeaea] text-4xl"><FaBars /></span>
             </div>
             
-        <SideBar isTrue={isTrue} setIsTrue={setIsTrue} />
+        
         </div>
     
         </>

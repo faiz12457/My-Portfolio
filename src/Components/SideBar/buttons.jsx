@@ -1,8 +1,11 @@
 import { IoHomeSharp } from "react-icons/io5";
-export function Button({title,Icon,isTrue}){
+export function Button({title,Icon,isTrue,handleRef,setIsTrue}){
     return (
         <>
-             <div className={`text-[#f56539]
+             <div onClick={()=>{
+             handleRef();
+             setIsTrue(false);
+             }} className={`text-[#f56539]
               hover:text-black cursor-pointer
                hover:bg-[#f56539] gap-4 w-52 h-16
         

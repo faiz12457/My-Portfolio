@@ -23,7 +23,8 @@ const icons={
 
 
 
-export  function SideBar({isTrue,setIsTrue}){
+export  function SideBar({isTrue,setIsTrue,handleRef,homeRef,contactRef,aboutRef}){
+    const refs = { homeRef, contactRef, aboutRef, };
   
     
     return (
@@ -45,7 +46,8 @@ export  function SideBar({isTrue,setIsTrue}){
             <div className="mt-[80px] w-full h-full flex items-center gap-6  flex-col ">
         {
             buttonInfo.map((button,index)=>{
-                     return  <Button key={index} Icon={icons[button.icon]} isTrue={isTrue} size={26} title={button.title} />
+                const ref=refs[button.refKey];
+                     return  <Button key={index} handleRef={()=>handleRef(ref)} setIsTrue={setIsTrue}  Icon={icons[button.icon]} isTrue={isTrue} size={26} title={button.title} />
             })
         }
           

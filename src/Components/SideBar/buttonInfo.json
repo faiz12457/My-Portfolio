@@ -1,14 +1,17 @@
 [
     {
         "icon":"IoHomeSharp",
-        "title":"Home"
+        "title":"Home",
+        "refKey":"homeRef"
+
     },
 
 
     {
         
         "icon":"FaUser",
-        "title":"About"
+        "title":"About",
+        "refKey":"aboutRef"
     },
 
     {
@@ -20,13 +23,15 @@
     {
 
         "icon":"FaRegFolderOpen",
-        "title":"Blog"
+        "title":"Blog",
+        "refKey":""
 
     },
 
     {
         "icon":"IoMdCall",
-        "title":"Contact"
+        "title":"Contact",
+        "refKey":"contactRef"
 
     }
 ]
