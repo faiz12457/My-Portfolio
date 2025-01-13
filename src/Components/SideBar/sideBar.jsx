@@ -23,8 +23,8 @@ const icons={
 
 
 
-export  function SideBar({isTrue,setIsTrue,handleRef,homeRef,contactRef,aboutRef}){
-    const refs = { homeRef, contactRef, aboutRef, };
+export  function SideBar({isTrue,setIsTrue,handleRef,homeRef,contactRef,aboutRef,projectRef,eduRef}){
+    const refs = { homeRef, contactRef, aboutRef,projectRef,eduRef };
   
     
     return (

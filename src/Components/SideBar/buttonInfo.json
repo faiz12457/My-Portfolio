@@ -17,14 +17,15 @@
     {
 
         "icon":"FaRegFileAlt",
-        "title":"Resume"
+        "title":"Resume",
+        "refKey":"eduRef"
     },
 
     {
 
         "icon":"FaRegFolderOpen",
-        "title":"Blog",
-        "refKey":""
+        "title":"Projects",
+        "refKey":"projectRef"
 
     },
 

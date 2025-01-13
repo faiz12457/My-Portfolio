@@ -21,7 +21,7 @@ function App() {
   const contactRef=useRef();
   const experienceRef=useRef();
   const skillRef=useRef();
-  
+  const eduRef=useRef()
 
   function handleRef(ref){
 
@@ -39,7 +39,7 @@ function App() {
         <About />
       </div>
 
-      <div>
+      <div ref={eduRef}>
         <EducationSec />
       </div>
 
@@ -47,9 +47,9 @@ function App() {
         <Skill />
       </div>
 
-      <div ref={experienceRef}>
+      {/* <div ref={experienceRef}>
         <Experience />
-      </div>
+      </div> */}
 
       <div ref={projectRef}>
         <Project />
@@ -66,6 +66,9 @@ function App() {
         homeRef={homeRef}
         contactRef={contactRef}
         aboutRef={aboutRef}
+        projectRef={projectRef}
+        eduRef={eduRef}
+        
         
         
         

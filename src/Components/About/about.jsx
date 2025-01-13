@@ -1,6 +1,6 @@
-import { BsSortDownAlt } from "react-icons/bs";
+
 import { useInView } from "react-intersection-observer";
-//import themeGirl from "./themeGirl.svg"
+
 
 
 
