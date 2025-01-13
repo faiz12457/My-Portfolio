@@ -60,7 +60,7 @@ function App() {
       </div>
 
       <ScrollToTop />
-<SideBar isTrue={isTrue}
+      <SideBar isTrue={isTrue}
         setIsTrue={setIsTrue}
         handleRef={handleRef}
         homeRef={homeRef}

@@ -38,6 +38,13 @@ export const Home=({isTrue,setIsTrue,contactRef,handleRef})=>{
                 </div>
                 </div>
                 <span onClick={()=>setIsTrue(true)} className="absolute cursor-pointer top-9 right-14 text-[#eaeaea] text-4xl"><FaBars /></span>
+
+                <div className="w-[400px] h-[400px] flex justify-center items-center  rounded-full absolute left-[-210px] top-[80px] bg-[#212121] z-20">
+                    <img src="avatarImg.png" className="w-[260px] h-auto object-cover" />
+                </div>
+
+
+
             </div>
             
         
