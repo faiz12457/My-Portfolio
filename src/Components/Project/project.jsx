@@ -14,20 +14,10 @@ export function Project(){
                 <p className="text-[#f56539] font-poppins text-6xl font-semibold text-center">Projects</p>
 
 
-                <div  className={`w-[90%]
-                 mx-auto flex  flex-wrap gap-7
-                  box-border justify-center  
-                 
-
-                  `}>
-
+                <div  className={`w-[90%] mx-auto flex  flex-wrap gap-7 box-border justify-center `}>
                   {
-                    info.map((info)=><ProjectCard img={info.img}  title={info.title} beforeContent={info.beforeContent} afterContent={info.afterContent} />)
+                    info.map((info,index)=><ProjectCard key={index} img={info.img} title={info.title} beforeContent={info.beforeContent} afterContent={info.afterContent} />)
                   }
-
-          
-          
-         
 
                 </div>
             </div>

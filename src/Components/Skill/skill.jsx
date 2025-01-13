@@ -13,7 +13,7 @@ export function Skill() {
               <Marquee speed={100} pauseOnHover={true} className="h-full">
                 <div className="flex gap-10 ml-10">
                 {
-                    info.map((info)=> <SkillCard title={info.title} img={info.img} />)
+                    info.map((info,index)=> <SkillCard key={index} title={info.title} img={info.img} />)
                 }
                     
                 </div>
