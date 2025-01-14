@@ -36,14 +36,14 @@ export  function SideBar({isTrue,setIsTrue,handleRef,homeRef,contactRef,aboutRef
                 onClick={(e)=>e.stopPropagation()} 
                 className={`bg-[#212121] -translate-x-full 
                 fixed top-0 left-0 w-80 h-[100vh] sm:rounded-r-[40px]
-                 flex justify-center items-center transition-transform ease-in-out duration-500  ${isTrue?"translate-x-0": "-translate-x-full"}`}>
+                 flex justify-center items-start pt-10 md:pt-0 md:items-center  transition-transform ease-in-out duration-500  ${isTrue?"translate-x-0": "-translate-x-full"}`}>
 
             <div className=" w-[250px] h-[540px]  ">
                 <span onClick={()=>setIsTrue(false)} className="text-[#f56539] hover:text-gray-300 absolute right-9 cursor-pointer">
                     <IoMdClose size={45} />
                 </span>
 
-            <div className="mt-[80px] w-full h-full flex items-center gap-6  flex-col ">
+            <div className="mt-[80px] w-full h-full flex items-center  gap-6  flex-col ">
         {
             buttonInfo.map((button,index)=>{
                 const ref=refs[button.refKey];

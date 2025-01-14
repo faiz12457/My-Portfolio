@@ -55,9 +55,9 @@ function App() {
         <Project />
       </div>
 
-      {/* <div ref={contactRef}>
+      <div ref={contactRef}>
         <Contact />
-      </div> */}
+      </div>
 
       <ScrollToTop />
       <SideBar isTrue={isTrue}

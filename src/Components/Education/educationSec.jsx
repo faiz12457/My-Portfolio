@@ -14,7 +14,7 @@ export function EducationSec(){
         <>
      <div className="w-[90%] mx-auto   mt-16 flex ">
     <div className=" w-full lg:w-[70%] h-full" >
-     <p className="text-[#f56539] text-5xl sm:text-6xl font-poppins font-bold text-center lg:text-start ">Education</p>
+     <p className="text-[#f56539] text-5xl sm:text-6xl font-poppins font-bold text-center md:text-start ">Education</p>
 
      <div ref={ref} className={` flex flex-col   gap-6 mt-10  `}>
 

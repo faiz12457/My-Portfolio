@@ -39,7 +39,7 @@ export const Home=({isTrue,setIsTrue,contactRef,handleRef})=>{
                 </div>
                 <span onClick={()=>setIsTrue(true)} className="hidden sm:inline hover:text-[#f56539] absolute cursor-pointer top-9 right-14 text-[#eaeaea] text-4xl"><FaBars /></span>
 
-                <div className={`w-52 h-52 -top-28 border-[5px] sm:border-none absolute  sm:-left-44 sm:top-36 sm:w-80  sm:h-80 lg:w-[400px] lg:h-[400px] flex justify-center items-center  rounded-full lg:absolute lg:left-[-210px] lg:top-20 transition-opacity ease-in-out duration-300 bg-[#212121] z-20 ${isTrue?"opacity-0":"opacity-100"}`}>
+                <div className={`w-52 h-52 -top-28 border-[5px] sm:border-none absolute  sm:-left-44 sm:top-36 sm:w-80  sm:h-80 lg:w-[400px] lg:h-[400px] flex justify-center items-center  rounded-full lg:absolute lg:left-[-210px] lg:top-24 transition-opacity ease-in-out duration-300 bg-[#212121] z-20 ${isTrue?"opacity-0":"opacity-100"}`}>
                     <img src="avatarImg.png" className=" w-28  sm:w-52 sm:h-auto lg:w-[260px] h-auto object-cover" />
                 </div>
 
