@@ -1,9 +1,10 @@
-import style from "../Education/edu.module.css";
+
 import { ProjectCard } from "./projectCard";
 import { FaArrowRight } from "react-icons/fa6";
 
 import info from "./cardInfo.json"
 import ButtonWithIcon from "./ButtonWithIcon";
+import { NavLink } from "react-router";
 
 
 export function Project(){
@@ -23,7 +24,7 @@ export function Project(){
 
                 </div>
                 <div className="w-full flex justify-center sm:justify-end">
-                <ButtonWithIcon title="View All" icon={<FaArrowRight />} />
+                <NavLink to="/allprojects"><ButtonWithIcon title="View All" icon={<FaArrowRight />} /></NavLink>
                 </div>
                 
             </div>
