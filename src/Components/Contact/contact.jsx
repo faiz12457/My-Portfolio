@@ -39,7 +39,7 @@ export function Contact(){
                      <div className=" grow flex flex-col gap-9 pl-8">
                      
                      <IconWithText text={"faizRizvi45@gmail.com"} icon={'@'}  />
-                     <IconWithText text={"03314437110"} icon={<IoMdCall />}  />
+                     <IconWithText text={"+923314437110"} icon={<IoMdCall />}  />
                      <IconWithText text={"Lahore,Pakistan"} icon={<TiLocation />}  />
                      
                      </div>
