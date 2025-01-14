@@ -1,6 +1,6 @@
 export function SkillCard({title="", img=""}){
     return (<>
-    <div className="w-40 h-40 hover:scale-110 
+    <div className="w-40 cursor-pointer h-40 hover:scale-110 
     transition-transform duration-500 ease-in-out 
     bg-[#212121] rounded-xl 
      text-[#eaeaea] font-bigShoulders text-2xl flex flex-col gap-3 justify-center items-center

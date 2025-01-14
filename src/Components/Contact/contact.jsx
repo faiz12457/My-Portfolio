@@ -18,25 +18,30 @@ export function Contact(){
             <div className="w-[90%] mx-auto  h-[580px] mt-[100px] box-border flex flex-col gap-16">
                 <p className="text-[#f56539] text-6xl font-poppins font-bold">Contacts</p>
 
-                <div className="w-full h-full flex">
-
-              <div className="w-1/3 h-full  pt-6 flex gap-4 flex-col justify-between">
+                <div className="w-full h-full flex box-border gap-3">
+        
+              <div className="w-1/3 h-full" >
+              <form className="w-full h-full  pt-6 flex gap-4 flex-col justify-between">
                     <InputField type={'text'} label={"Name"} placeholder={"John Doe"} />
                     <InputField type={'email'} label={"Email"} placeholder={"John@doe.com"} />
                     <InputField type={'textarea'} label={"Message"} placeholder={"Type your message...."} isTextarea={true} />
 
                     <button className=" hover:bg-[#eaeaea] hover:scale-110 transition-transform duration-700 ease-in-out  font-poppins font-semibold text-[#212121] w-[140px] 
                      rounded-[50px]  p-3 bg-[#f56539] flex justify-center items-center gap-3">Send <BsSend size={20}/></button>
+                     </form>
               </div>
+
 
 
 
               <div className="w-1/3  h-full pt-6  flex flex-col">
                      
-                     <div className="gap-9 grow flex flex-col">
+                     <div className=" grow flex flex-col gap-9 pl-8">
+                     
                      <IconWithText text={"faizRizvi45@gmail.com"} icon={'@'}  />
                      <IconWithText text={"03314437110"} icon={<IoMdCall />}  />
                      <IconWithText text={"Lahore,Pakistan"} icon={<TiLocation />}  />
+                     
                      </div>
                  
                  <div className="flex justify-center items-center w-full gap-5 mb-10" >

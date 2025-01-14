@@ -37,7 +37,7 @@ export const Home=({isTrue,setIsTrue,contactRef,handleRef})=>{
                     <button onClick={()=>handleRef(contactRef)} className="hover:text-[#eaeaea] text-[#212121]  hover:bg-[#212121] bg-[#f56539] border-[#f56539] w-[150px] h-12 border-2 rounded-3xl">Contact</button>
                 </div>
                 </div>
-                <span onClick={()=>setIsTrue(true)} className="absolute cursor-pointer top-9 right-14 text-[#eaeaea] text-4xl"><FaBars /></span>
+                <span onClick={()=>setIsTrue(true)} className=" hover:text-[#f56539] absolute cursor-pointer top-9 right-14 text-[#eaeaea] text-4xl"><FaBars /></span>
 
                 <div className={`w-[400px] h-[400px] flex justify-center items-center  rounded-full absolute left-[-210px] top-[80px] transition-opacity ease-in-out duration-300 bg-[#212121] z-20 ${isTrue?"opacity-0":"opacity-100"}`}>
                     <img src="avatarImg.png" className="w-[260px] h-auto object-cover" />
