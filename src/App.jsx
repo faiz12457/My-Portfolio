@@ -47,17 +47,17 @@ function App() {
         <Skill />
       </div>
 
-      {/* <div ref={experienceRef}>
+      <div ref={experienceRef}>
         <Experience />
-      </div> */}
+      </div>
 
       <div ref={projectRef}>
         <Project />
       </div>
 
-      <div ref={contactRef}>
+      {/* <div ref={contactRef}>
         <Contact />
-      </div>
+      </div> */}
 
       <ScrollToTop />
       <SideBar isTrue={isTrue}

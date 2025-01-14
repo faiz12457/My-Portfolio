@@ -35,7 +35,7 @@ export  function SideBar({isTrue,setIsTrue,handleRef,homeRef,contactRef,aboutRef
                 <div 
                 onClick={(e)=>e.stopPropagation()} 
                 className={`bg-[#212121] -translate-x-full 
-                fixed top-0 left-0 w-80 h-[100vh] rounded-r-[40px]
+                fixed top-0 left-0 w-80 h-[100vh] sm:rounded-r-[40px]
                  flex justify-center items-center transition-transform ease-in-out duration-500  ${isTrue?"translate-x-0": "-translate-x-full"}`}>
 
             <div className=" w-[250px] h-[540px]  ">
