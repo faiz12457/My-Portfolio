@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 export function About(){
 
     const [aboutRef,isView]=useInView({
-    
+         triggerOnce:true,
     })
     return (
         <>
