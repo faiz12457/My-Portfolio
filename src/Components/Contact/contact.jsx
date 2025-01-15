@@ -46,7 +46,7 @@ const [send,setSend]=useState(false)
     const {values,errors,handleChange,handleBlur,handleSubmit,touched}=formik
     const {name,email,message}=values;
 
-  console.log(touched)
+  
 
     
     
