@@ -10,17 +10,23 @@ import { FaFacebook } from "react-icons/fa6";
 import { LuCopyright } from "react-icons/lu";
 import {useFormik} from "formik"
 import { portfolioSchema } from "./yupSchema";
+import { useState } from "react";
 
 
 
 
 export function Contact(){
     
-
+const [send,setSend]=useState(false)
     const date= new Date();
 
     const onSubmit=(values,actions)=>{
-        console.log(values)
+        setSend(true)
+
+        setTimeout(()=>{
+           setSend(false)
+        },3000)
+        
         actions.resetForm(); 
     }
     
@@ -60,7 +66,7 @@ export function Contact(){
                     <InputField type={'textarea'} errors={errors.message} touched={touched.message} values={message} name="message" onBlur={handleBlur} onChange={handleChange} label={"Message"} placeholder={"Type your message...."} isTextarea={true} />
                <div className="w-full flex justify-end sm:justify-start sm:w-max">
                     <button type="submit" className="  hover:bg-[#eaeaea] hover:scale-110 transition-transform duration-700 ease-in-out  font-poppins font-semibold text-[#212121] w-[140px] 
-                     rounded-[50px]  p-3 bg-[#f56539] flex justify-center items-center gap-3">Send <BsSend size={20}/></button>
+                     rounded-[50px]  p-3 bg-[#f56539] flex justify-center items-center gap-3">{send?"Msg Sent":"Send"}{send?null:<BsSend size={20}/>}</button>
             </div>
 
 
