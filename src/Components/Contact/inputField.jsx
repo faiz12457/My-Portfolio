@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export function InputField({ type, 
   label, placeholder,
@@ -15,15 +15,6 @@ export function InputField({ type,
    
    
    {
-
-    const ref=useRef();
-    function handleCopy(e){
-      ref.current.style.backgroundColor='black';
-    }
-
-
-
-
 
     return (
       <div className="relative  w-full sm:w-max ">
@@ -48,11 +39,9 @@ export function InputField({ type,
           <input
             type={type}
             name={name}
-            ref={ref}
             onChange={onChange}
             onBlur={onBlur}
             placeholder={placeholder}
-            onCopy={handleCopy}
             value={values}
             className="h-[50px] p-4 inline-block font-poppins outline-none text-white w-full sm:w-72 md:w-80
             border-[#f56539] rounded-[1.2rem] border-4 bg-transparent text-[.9rem]"
