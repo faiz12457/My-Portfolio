@@ -9,7 +9,7 @@ import ScrollToTop from '../scroll/scroll';
 function AllProjects() {
 
   const [data,setData]=useState([]);
-  const [input,setInput]=useState();
+  const [input,setInput]=useState("");
 
         function singleData(data){
                    if(!input) return data
