@@ -1,11 +1,11 @@
 
 import { HoverableIcon } from "../Contact/hoverAbleIcon"
- import styles from "../Education/edu.module.css";
+import styles from "../Education/edu.module.css";
 import style from "./projectCard.module.css"
 import { TbPlayerPlayFilled } from "react-icons/tb";
 import { useInView } from "react-intersection-observer";
 
-export function ProjectCard({beforeContent="",afterContent="",title="",img=""}){
+export function ProjectCard({beforeContent="",afterContent="",title="",img="",link=""}){
 const [ref,isView]=useInView({
     triggerOnce:true
 });
@@ -23,8 +23,8 @@ const [ref,isView]=useInView({
             <img src={img} className={`h-auto object-cover w-[220px] ${style.img}`} />
         </div>
 <div className="w-full flex justify-between h-[80px] items-center">
-        <HoverableIcon icon={<TbPlayerPlayFilled />} className="hover:text-[#212121]" iconColor="text-[#eaeaea]" bgColor="bg-[#212121]" />
-      <HoverableIcon icon={"</>"} hoverBgColor="hover:bg-[#212121]" className={`${style.secIcon} border-[#eaeaea] hover:border-transparent  hover:text-[#f56539] rounded-[50%] border-2 text-[1.2rem] text-[#eaeaea] font-bold`} />
+       <a href={link} target="_blank"> <HoverableIcon icon={<TbPlayerPlayFilled />} className="hover:text-[#212121]" iconColor="text-[#eaeaea]" bgColor="bg-[#212121]" /></a>
+      <a href={link} target="_blank"><HoverableIcon icon={"</>"} hoverBgColor="hover:bg-[#212121]" className={`${style.secIcon} border-[#eaeaea] hover:border-transparent  hover:text-[#f56539] rounded-[50%] border-2 text-[1.2rem] text-[#eaeaea] font-bold`} /></a>
 </div>
 
 </div>
@@ -33,6 +33,8 @@ const [ref,isView]=useInView({
 
 
        </div>
+
+ 
 
 
         </>

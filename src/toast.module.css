@@ -1,0 +1,19 @@
+.Toastifytoastcontainer {
+    all: unset; /* Removes all inherited styles */
+}
+
+.mytoast {
+    background: #f56539;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.mytoastbody {
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+}
+
+.mytoastprogress {
+    display: none;
+}

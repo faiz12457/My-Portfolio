@@ -8,9 +8,42 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
 import { LuCopyright } from "react-icons/lu";
+import {useFormik} from "formik"
+import { portfolioSchema } from "./yupSchema";
+
+
+
+
 export function Contact(){
+    
 
     const date= new Date();
+
+    const onSubmit=(values,actions)=>{
+        console.log(values)
+        actions.resetForm(); 
+    }
+    
+    const formik =useFormik({
+        initialValues:{
+            name:"",
+            email:"",
+            message:"",
+        },
+
+        onSubmit,
+    validationSchema:portfolioSchema,
+    
+})
+
+
+    const {values,errors,handleChange,handleBlur,handleSubmit,touched}=formik
+    const {name,email,message}=values;
+
+  console.log(touched)
+
+    
+    
     
 
     return (
@@ -21,12 +54,12 @@ export function Contact(){
                 <div className="w-full h-full  flex flex-col sm:flex-row box-border  gap-3">
         
               <div className="w-full lg:w-1/3 md:w-1/2  sm:h-full" >
-              <form className="w-full h-full  pt-6  flex justify-center items-center sm:items-start gap-4 flex-col sm:justify-between">
-                    <InputField type={'text'} label={"Name"} placeholder={"John Doe"} />
-                    <InputField type={'email'} label={"Email"} placeholder={"John@doe.com"} />
-                    <InputField type={'textarea'} label={"Message"} placeholder={"Type your message...."} isTextarea={true} />
+              <form onSubmit={handleSubmit}  className="w-full h-full  pt-6  flex justify-center items-center sm:items-start gap-8 sm:gap-7 flex-col sm:justify-between">
+                    <InputField type={'text'} errors={errors.name} touched={touched.name} values={name} name="name" onBlur={handleBlur} onChange={handleChange} label={"Name"} placeholder={"John Doe"} />
+                    <InputField type={'email'} errors={errors.email} touched={touched.email} values={email} name="email" onBlur={handleBlur} onChange={handleChange} label={"Email"} placeholder={"John@doe.com"} />
+                    <InputField type={'textarea'} errors={errors.message} touched={touched.message} values={message} name="message" onBlur={handleBlur} onChange={handleChange} label={"Message"} placeholder={"Type your message...."} isTextarea={true} />
                <div className="w-full flex justify-end sm:justify-start sm:w-max">
-                    <button className="  hover:bg-[#eaeaea] hover:scale-110 transition-transform duration-700 ease-in-out  font-poppins font-semibold text-[#212121] w-[140px] 
+                    <button type="submit" className="  hover:bg-[#eaeaea] hover:scale-110 transition-transform duration-700 ease-in-out  font-poppins font-semibold text-[#212121] w-[140px] 
                      rounded-[50px]  p-3 bg-[#f56539] flex justify-center items-center gap-3">Send <BsSend size={20}/></button>
             </div>
 
@@ -49,9 +82,9 @@ export function Contact(){
                      </div>
                  
                  <div className="flex justify-center items-center  w-full gap-5 sm:mb-10  pt-8 sm:pt-0" >
-                    <HoverableIcon icon={<FaLinkedinIn />} />
-                    <HoverableIcon icon={<FaGithub />} />
-                    <HoverableIcon icon={<FaFacebook />} />
+                    <HoverableIcon icon={<FaLinkedinIn />} isTrueLink={true} link="https://www.linkedin.com/in/faiz-rizvi-bb1142294/" />
+                    <HoverableIcon icon={<FaGithub />} isTrueLink={true} link="https://github.com/faiz12457" />
+                    <HoverableIcon icon={<FaFacebook />} isTrueLink={true}  link="https://github.com/faiz12457" />
                  </div>
               </div>
 

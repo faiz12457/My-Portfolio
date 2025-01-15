@@ -37,7 +37,7 @@ function AllProjects() {
    <div className='flex w-full justify-center'><input type='text' value={input} onChange={(e)=>setInput(e.target.value)} placeholder='Search projects... ' className=' w-[300px] sm:w-[500px] h-11 rounded-3xl font-medium font-poppins pl-5 bg-[#212121] text-[#eaeaea]  shadow-customInput outline-none' /></div>
     <div className='w-full flex gap-16 flex-wrap justify-center mt-16'>
   {
-    filteredData.map((project)=>   <ProjectCard title={project.title}  img={project.img} beforeContent={project.beforeContent} afterContent={project.afterContent} />)
+    filteredData.map((project)=>   <ProjectCard title={project.title} link={project.link}  img={project.img} beforeContent={project.beforeContent} afterContent={project.afterContent} />)
   }
 
 

@@ -17,9 +17,9 @@ export const Home=({isTrue,setIsTrue,contactRef,handleRef})=>{
                 <p className="font-bestermind text-4xl  sm:text-4xl md:text-5xl font-semibold mt-3">Faiz Rizvi </p>
                 <span onClick={()=>setIsTrue(true)} className="sm:hidden hover:text-[#212121] absolute cursor-pointer top-9 right-14 text-[#eaeaea] text-3xl"><FaBars /></span>
                 <div className="hidden sm:flex grow sm:items-end  sm:justify-center lg:justify-start sm:text-[#212121] sm:mb-4 sm:gap-8">
-                <span className="md:text-4xl sm:text-3xl cursor-pointer hover:scale-125 active:scale-100 transition-transform duration-500 ease-in-out"><BsLinkedin /></span>
-                <span className="md:text-4xl sm:text-3xl cursor-pointer hover:scale-125 active:scale-100 transition-transform duration-500 ease-in-out"><FaGithub /></span>
-                <span className="md:text-4xl sm:text-3xl cursor-pointer hover:scale-125 active:scale-100 transition-transform duration-500 ease-in-out"><FaFacebook /></span>
+                <span className="md:text-4xl sm:text-3xl cursor-pointer hover:scale-125 active:scale-100 transition-transform duration-500 ease-in-out"><a href="https://www.linkedin.com/in/faiz-rizvi-bb1142294/" target="_blank"><BsLinkedin /></a></span>
+                <span className="md:text-4xl sm:text-3xl cursor-pointer hover:scale-125 active:scale-100 transition-transform duration-500 ease-in-out"><a href="https://github.com/faiz12457" target="_blank"><FaGithub /></a></span>
+                <span className="md:text-4xl sm:text-3xl cursor-pointer hover:scale-125 active:scale-100 transition-transform duration-500 ease-in-out"><a href="https://github.com/faiz12457" target="_blank"><FaFacebook /></a></span>
                 </div>
              </div>
             </div>

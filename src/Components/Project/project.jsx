@@ -19,7 +19,7 @@ export function Project(){
 
                 <div  className={`w-[90%] mx-auto flex  flex-wrap gap-12 sm:gap-7 box-border justify-center `}>
                   {
-                    info.map((info,index)=><ProjectCard key={index} img={info.img} title={info.title} beforeContent={info.beforeContent} afterContent={info.afterContent} />)
+                    info.map((info,index)=><ProjectCard key={index} link={info.link} img={info.img} title={info.title} beforeContent={info.beforeContent} afterContent={info.afterContent} />)
                   }
 
                 </div>
